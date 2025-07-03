@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'covid';
+    src: url('fontes/coved Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --cor1: #FFD1D1;
+    --cor2: #D98686;
+    --cor3: #400101;
+    --cor4: #A64646;
+    --cor5: #731919;
+
+    --fonte-padrao: 'Roboto', sans-serif;
+    --fonte-destaque: 'covid', serif; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    background-image: linear-gradient(to top, #731919, #A64646);
+    min-height: 200px;
+    text-align: center;
+}
+header h1{
+    font: normal normal 7em var(--fonte-destaque);
+}
+header h2{
+    font: normal bold 3em var(--fonte-padrao);
+}
+
+nav{
+    background-color: var(--cor2);
+    max-width: 100%;
+    min-height: 25px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.263);
+}
+nav a{
+    font-size: 30px;
+    margin: 90px;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 5px;
+    color: black;
+}
+nav a:hover{
+    background-color: #a646467a;
+    color: white;
+    transition: 0.5s;
+}
+
+main{
+    background-color: white;
+    max-width: 1100px;
+    min-width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    font-family: var(--fonte-padrao);
+}
+article{
+    
+}
+.artigo{
+    text-align: center;
+}
+.artigo > h1{
+    font: normal bold 3em var(--fonte-padrao);
+    margin: 30px;
+    color: var(--cor5);
+}
+.artigo div{
+    
+}
+.artigo div > img{
+    width: 800px
+}
+#p1{
+    text-align: justify;
+    text-indent: 50px;
+    padding:10px;
+    font-size: 1.5em;
+}
+
+.video > h1{
+    font: normal bold 3em var(--fonte-padrao);
+    margin: 10px;
+    text-align: center;
+    color: var(--cor5);
+}
+.video p{
+    text-align: center;
+    margin-bottom: 20px;
+    font: normal bold 1.5em var(--fonte-padrao);
+    color: var(--cor4);
+}
+iframe{
+    border: 50px solid rgba(0, 0, 0, 0.137);
+    margin-left:180px;
+}
+aside{
+    background-color: var(--cor2);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 25px;
+}
+aside h1{
+    text-align: center;
+    font: normal bold 2em var(--fonte-padrao);
+    
+}
+aside p {
+    text-align: left;
+    font: normal bold 1.2em var(--fonte-padrao);
+    padding: 10px;
+}
+ol{
+    list-style-position: inside;
+    columns: 2;
+}
+.final{
+    font: normal bold 1.2em var(--fonte-padrao);
+    padding: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    height: 50px;
+}
+footer > p{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
